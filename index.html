@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/app.js" defer></script>
+  </head>
+
+  <body>
+
+    <header class="header show-nav">
+      <div class="container">
+        <div class="logo">
+          <a href="#slider"><img width="35" src="img/animal-kingdom.png"></a>
+        </div>
+        <nav class="navbar">
+          <ul class="menu list-unstyled">
+            <li><a href="#about">A propos de moi</a></li>
+            <li><a href="#skills">Mes compétences</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contactez-moi</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button class="burger"><span class="bar"></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider" id="slider">
+      <img src="img/slider.jpg" class="slider-background">
+      <div class="slider-content">
+        <h1>Kimberley Nusbaum</h1>
+        <p>Je suis une Newbie développeur</p>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="boxed text-center">
+        <div class="flex">
+          <div class="w40">
+            <h2>À propos de moi</h2>
+          </div>
+           <div class="w60">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills"> 
+      <div class="boxed text-center">
+        <h2>Mes compétences</h2>
+        <div class="flex gap20">
+          <div class="w33 skill">
+            <img src="img/html-logo.jpg">
+            <h3>HTML</h3>
+          </div>
+          <div class="w33 skill">
+            <img src="img/css-logo.jpg">
+            <h3>CSS</h3>
+          </div>
+          <div class="w33 skill">
+            <img src="img/js-logo.png">
+            <h3>JAVASCRIPT</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio"> 
+      <div class="boxed text-center">
+        <h2>Mes créations</h2>
+        <div class="flex space-between">
+          <div class="w32 realisation">
+              <img src="img/cv.png" >
+              <button><a href="#box-1">Curriculum Vitae</a></button>
+          </div>
+          <div class="w32 realisation">
+              <img src="img/cc.png">
+              <button><a href="#box-2">Cahier des charges</a></button>
+          </div>
+          <div class="w32 realisation">
+              <img src="img/commentaire.png">
+              <button><a href="#box-3">Espace commentaire</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contact">
+      <div class="container">
+        <div class="section-header"></div>
+           <h2>Contact</h2>
+        </div>
+        <form action="contact.php" class="form">
+            <label for="firstname">
+              <input type="text" name="firstname" id="firstname" placeholder="Nom">
+            </label>
+            <label for="lastname">
+              <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+            </label>
+            <label for="email">
+              <input type="email" name="email" id="email" placeholder="email">
+            </label>
+            <textarea name="message" id="message" placeholder="message" ></textarea>
+            <a href="mailto:kimberley.nusbaum@gmail.com"><input type="submit" class="btn" value="envoyer"></a>
+        </form>
+      </div>
+    </div>
+
+  <footer>
+    <div class="container">
+      <div class="w50">
+        <a href="https://github.com" target="_blank"><img class="images" src="img/github.png" alt="icone github"></a>
+      </div>
+      <div class="w32">
+        <a href="https://fr.linkedin.com" target="_blank"><img class="images" src="img/linkedin.png" alt="icone linkedin"></a>
+      </div>
+      <div class="date">
+        <p>Dernière mise à jour le 21 février 2024</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="box-1">
+    <div id="modal-1">
+      <h2>La création de mon Curriculum Vitae</h2>
+      <p>Date de création: 06/11/23 <br>-Afin de reproduire au mieux le Curriculum Vitae, j'ai utilisé pour cela du HTML et du CSS. <br> https://github.com/kumby221/Curriculum-Vitae.git</p>
+      <img src="img/cv2.png">
+      <img src="img/cv3.png">
+      <img src="img/cv4.png">
+      <a href="#">X</a>
+    </div>
+  </div>
+
+  <div id="box-2">
+    <div id="modal-2">
+      <h2>La création du Cahier des charges</h2>
+      <p>Date de création: 13/09/23 <br> -Pour le cachier des pages il suffisait simplment d'utiliser une application telle que world, de faire des petites recherche internet ainsi que d'une dose de créativité.</p>
+      <img src="img/cc1.png">
+      <img src="img/cc2.png">
+      <img src="img/cc3.png">
+      <a href="#">X</a>
+    </div>
+  </div>
+
+  <div id="box-3">
+    <div id="modal-3">
+      <h2>L'amélioration d'un espace commentaire </h2>
+      <p>Date de création: 28/12/23 <br> -Pour ce devoir l'objectif etait de dynamiser un espace commentaire en utilisant excluvivement Javascript. <br>https://github.com/kumby221/JS-espace.com.git</p>
+      <img src="img/esc1.png">
+      <img src="img/esc2.png">
+      <img src="img/esc3.png">
+      <a href="#">X</a>
+    </div>
+  </div>
+
+  </body>
+
+</html>
